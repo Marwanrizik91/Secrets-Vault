@@ -8,11 +8,11 @@ export const Feeds = () => {
         <div className="secrets-feed">
             {staticFeeds.map((feed, i) => (
                 <div className="secrets-container">
-                    <img src={feed.imgUrl} alt="user" />
+                    <img className="profile-img" src={feed.imgUrl} alt="user" />
                     <div className="vertical-line"></div>
                     <h1>{feed.nickname}</h1>
                     <p>{feed.secret}</p>
-                    <img src={optionslogo} alt="secret-settings"/>
+                    <img className="settings-img" src={optionslogo} alt="secret-settings"/>
                 </div>
             ))}
         </div>

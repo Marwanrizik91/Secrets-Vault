@@ -46,12 +46,22 @@ body {
 	align-items: center;
 }
 
-.secrets-container img {
+.secrets-container .profile-img {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	width: 65px;
 	height: 65px;
 }
+
+.secrets-container .settings-img {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  transform: rotate(90deg)
+}
+
+
 
 .secrets-container h1 {
 	margin-right: 10px;
@@ -79,10 +89,10 @@ body {
 
 
 .menu-container {
-	position: fixed;
-	bottom: 10px;
+	position: absolute;
+	bottom: 5px;
 	background-color: #3a86ff;
 	height: 70px;
-  right: 8px;
-  left: 8px;
+  right: 5px;
+  left: 5px;
 }
