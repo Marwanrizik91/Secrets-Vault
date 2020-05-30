@@ -1,11 +1,13 @@
 import React from 'react'
 import staticFeeds from '../staticFeeds.json'
 import optionslogo from '../assets/images/more.svg'
+import AddSecretForm from './addSecretForm'
 
 export const Feeds = () => {
 
     return (
         <div className="secrets-feed">
+            <AddSecretForm />
             {staticFeeds.map((feed, i) => (
                 <div className="secrets-container">
                     <img className="profile-img" src={feed.imgUrl} alt="user" />
