@@ -4,7 +4,7 @@ body {
 	text-align: justify;
 	background: url('./assets/images/background.png') no-repeat center center fixed;
   background-size: cover;
-  overflow-y: hidden;
+ 
 }
 
 .App {
@@ -12,12 +12,16 @@ body {
 }
 
 .nav-container {
-	display: flex;
+  display: flex;
+  position: fixed;
 	background-color: #3a86ff;
-	height: 70px;
+	height: 65px;
 	margin-bottom: 20px;
 	align-items: center;
   justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .nav-title {
@@ -32,7 +36,9 @@ body {
 }
 
 .secrets-feed {
-	display: inline-block;
+  display: inline-block;
+  margin-bottom: 55px;
+  margin-top: 75px;
 }
 
 .secrets-container {
@@ -42,7 +48,7 @@ body {
 	width: 95vw;
 	border-radius: 5px;
 	height: 65px;
-	margin-bottom: 5px;
+	margin-bottom: 9px;
 	align-items: center;
 }
 
@@ -54,17 +60,19 @@ body {
 }
 
 .secrets-container .settings-img {
-  position: fixed;
+  position: absolute;
   width: 30px;
   height: 30px;
   right: 10px;
   transform: rotate(90deg)
 }
 
-
-
 .secrets-container h1 {
 	margin-right: 10px;
+}
+
+.secrets-container p {
+  margin-right: 15px;
 }
 
 .vertical-line {
@@ -90,7 +98,7 @@ body {
 
 
 .menu-container {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	background-color: #3a86ff;
 	height: 55px;
